@@ -28,7 +28,7 @@ function InputArea({ OnNewTodo }) {
             type="text"
             value={todoName}
             placeholder="Enter todo .."
-            className="w-full text-lg px-5 py-3  rounded-lg outline-none border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6]"
+            className="w-full text-lg px-5 py-3  rounded-lg outline-none border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6] bg-[#242424]"
             onChange={handelNameChange}
           />
         </div>
@@ -36,7 +36,7 @@ function InputArea({ OnNewTodo }) {
           <input
             type="date"
             value={todoDate}
-            className="w-full py-3 px-3 rounded-lg outline-none border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6] "
+            className="w-full py-3 px-3 rounded-lg outline-none border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6] bg-[#242424]  "
             onChange={handelDateChange}
           />
         </div>
