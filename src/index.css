@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.card-bg-color {
+  @apply bg-gradient-to-r from-[#0F2027]  to-[#203A43];
+}
+
+.card-border-color-shadow {
+  @apply border border-[#6EE7B7] hover:border-[#3B82F6]  focus:border-[#3B82F6];
+  @apply shadow-md shadow-[#6EE7B7];
+}
+
+.heading-text-color {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-[#1f4037] to-[#99f2c8];
+}
+.welcome-text-color {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-[#12c2e9] via-[#c471ed] to-[#f64f59];
+}
