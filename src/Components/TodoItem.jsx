@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
-
+import { MdDelete } from "react-icons/md";
 function TodoItem({ todoName, todoDate, onDeleteClick }) {
   return (
     <>
@@ -15,10 +15,10 @@ function TodoItem({ todoName, todoDate, onDeleteClick }) {
         </div>
         <div className="sm:w-[15%]">
           <button
-            className=" w-full px-6 sm:px-4 py-3 border border-[#7c241c] hover:border-[#f63b64] focus:border-[#ee3d3d] rounded-md shadow-sm shadow-[#7c241c]"
+            className=" w-full px-6 sm:px-4 py-3 border border-[#7c241c] hover:border-[#f63b64] focus:border-[#ee3d3d] rounded-md shadow-sm shadow-[#7c241c] flex justify-center"
             onClick={() => onDeleteClick(todoName)}
           >
-            Delete
+            <MdDelete className="text-red-700 text-xl" />
           </button>
         </div>
       </div>

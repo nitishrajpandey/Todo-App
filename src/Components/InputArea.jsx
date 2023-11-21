@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { SiAddthis } from "react-icons/si";
 
 function InputArea({ OnNewTodo }) {
   let [todoName, setTodoName] = useState("");
@@ -42,10 +43,10 @@ function InputArea({ OnNewTodo }) {
         </div>
         <div className="sm:w-[15%]">
           <button
-            className=" w-full px-6 sm:px-4 py-3 border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6]  rounded-md active:scale-95 duration-300 ease-in-out  shadow-sm shadow-[#6EE7B7]"
+            className=" w-full px-6 sm:px-4 py-3 border border-[#6EE7B7] hover:border-[#3B82F6] focus:border-[#3B82F6]  rounded-md active:scale-95 duration-300 ease-in-out  shadow-sm shadow-[#6EE7B7] flex justify-center"
             onClick={handelOnclick}
           >
-            ADD
+            <SiAddthis />
           </button>
         </div>
       </div>
